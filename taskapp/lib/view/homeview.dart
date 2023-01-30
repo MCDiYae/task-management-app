@@ -8,17 +8,28 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: ViewBody(),
-      
+      backgroundColor: backColor1,
     );
   }
 }
 
 class AppBarView extends StatelessWidget {
-  const AppBarView({super.key});
+  const AppBarView({super.key, required this.title});
+  final String title;
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          title,
+          style: const TextStyle(
+            fontSize: 28,
+          ),
+        ),
+      ],
+    );
   }
 }
 
@@ -27,6 +38,13 @@ class ViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      children: const [
+        Padding(
+          padding: EdgeInsets.all(20.0),
+          child: AppBarView(title: "TaskApp"),
+        ),
+      ],
+    );
   }
 }
