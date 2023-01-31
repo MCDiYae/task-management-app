@@ -15,9 +15,8 @@ class BoutonAdd extends StatelessWidget {
       width: double.infinity,
       child: ElevatedButton(
         onPressed: onPressed,
-        // style: ElevatedButton.styleFrom(backgroundColor: pPremuimColor),
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(Colors.red),
+          backgroundColor: MaterialStateProperty.all(pPremuimColor),
         ),
         child: Text(
           titre,
