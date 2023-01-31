@@ -11,8 +11,8 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: ViewBody(),
-      bottomNavigationBar:
-          BoutonAdd(titre: boutton1), // POUR LE METTRE A LA FIN DU PAGE
+      // POUR LE METTRE A LA FIN DU PAGE
+      bottomNavigationBar: BoutonAdd(titre: boutton1),
       backgroundColor: backColor1,
     );
   }

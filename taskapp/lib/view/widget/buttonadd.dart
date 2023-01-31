@@ -10,7 +10,7 @@ class BoutonAdd extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 30),
+      margin: const EdgeInsets.all(30),
       padding: const EdgeInsets.all(5),
       width: double.infinity,
       child: ElevatedButton(
